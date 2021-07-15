@@ -1,7 +1,7 @@
 import credentials from "../credentials/credentials.json";
 
 const BASE_URL = "https://openexchangerates.org/api/";
-const APP_ID = process.env.ENCHANGE_APP_ID || credentials.app_id || "";
+const APP_ID = process.env.EXCHANGE_APP_ID || credentials.app_id || "";
 
 const APIHelper = {
   async get(endpoint, params) {
